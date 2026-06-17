@@ -56,3 +56,5 @@ logs/
 # Claude Code — keep checked-in config, ignore personal overrides
 .claude/settings.local.json
 .claude/.credentials*
+.claude/logs/
+.claude/settings.local.json
