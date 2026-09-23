@@ -1,57 +1,32 @@
 name: Feature request
-description: Propose new functionality or an enhancement.
-labels: ["enhancement"]
+description: Request a new capability or roadmap item
+title: "[Feature]: "
+labels:
+  - needs-triage
 body:
-  - type: dropdown
-    id: module
+  - type: markdown
     attributes:
-      label: Target module
-      options:
-        - core
-        - territory
-        - capture
-        - ocr
-        - doorcard
-        - triggers
-        - hoa
-        - pipeline
-        - new module
-        - unsure
-    validations:
-      required: true
-  - type: dropdown
-    id: phase
-    attributes:
-      label: Suggested phase
-      options:
-        - phase-0
-        - phase-1
-        - phase-2
-        - phase-3
-        - phase-4
-        - phase-5
-        - deferred / future
-    validations:
-      required: true
+      value: |
+        Thanks for the suggestion. After you submit this, set the issue's **Type** to
+        `Feature` if you have permission. Approved features become the roadmap — see
+        docs/standards/github-issues.md and docs/standards/work-item-sync.md (Flow 2)
+        for how approval and the `roadmap` marker work. Note: once approved, the
+        roadmap item is authored in ADO and projected back here as a locked,
+        bot-managed issue (labels `roadmap` + `ado-managed`) — this original request
+        stays open as the discussion thread.
   - type: textarea
     id: problem
     attributes:
-      label: Problem
-      description: What real-world rep behavior or pain point does this solve?
+      label: What problem does this solve?
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
-      label: Proposal
-      description: How should it work? UI sketch, data shape, edge cases.
+      label: Proposed solution
     validations:
-      required: true
+      required: false
   - type: textarea
     id: alternatives
     attributes:
       label: Alternatives considered
-  - type: textarea
-    id: open-questions
-    attributes:
-      label: Open questions / risks
